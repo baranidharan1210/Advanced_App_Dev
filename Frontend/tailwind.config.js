@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      title:["Rochester", "cursive"],
+      text:["Montaga", "serif"]
+    }
   },
   plugins: [],
 }

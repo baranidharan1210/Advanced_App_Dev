@@ -3,12 +3,14 @@ import Input from "./Input";
 import { loginFields } from "../../constants/AuthFields";
 import Formextra from "./Formextra";
 import FormAction from "./FormAction";
+import { useNavigate } from "react-router";
 
 const fields = loginFields;
 let fieldsState = {};
 fields.forEach((field) => (fieldsState[field.id] = ""));
 
 export default function Login() {
+  const navigate = useNavigate();
   const [loginState, setLoginState] = useState(fieldsState);
 
   const handleChange = (e) => {
@@ -17,6 +19,19 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(loginState);
+
+    if (
+      loginState.email_address === "user@gmail.com" &&
+      loginState.password === "user@9876"
+    ) {
+      navigate("/");
+    } else if (
+      loginState.email_address === "admin@gmail.com" &&
+      loginState.password === "admin@9876"
+    ) {
+      navigate("/admin/dashboard");
+    }
   };
 
   return (

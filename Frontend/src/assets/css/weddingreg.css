@@ -1,0 +1,69 @@
+/* Updated weddingreg.css */
+
+.wedding-details-container {
+    max-width: 800px;
+    margin: 10px ;
+}
+
+.wedding-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.wedding-details-table th,
+.wedding-details-table td {
+    border: 1px solid #1b1a1a;
+    padding: 10px;
+    text-align: left;
+}
+
+.wedding-details-table th {
+    background-color: #f2f2f2;
+}
+
+.wedding-details-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.wedding-details-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.wedding-details-table th,
+.wedding-details-table td:last-child {
+    width: 10%;
+}
+
+.wedding-details-box {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.wedding-details-box strong {
+    font-size: 1.2em;
+}
+
+.wedding-details-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Delete button styling */
+.ddd-button {
+    background-color: orangered; /* Red color */
+    color: #fff; /* White text */
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.ddd-button:hover {
+    background-color: green; /* Darker red on hover */
+}
+/* Add these styles to your existing CSS file (e.g., weddingreg.css) */
+
